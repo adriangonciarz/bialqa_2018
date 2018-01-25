@@ -1,0 +1,11 @@
+version: '2'
+services:
+  api:
+    image: agonciarz/json-server
+    ports:
+      - "3000:3000"
+  tests:
+    image: agonciarz/mvn-api-tests:latest
+    volumes:
+      - ./reports:/reports
+      - ./config.properties:/tests/src/main/resources/config.properties

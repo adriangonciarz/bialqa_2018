@@ -1,0 +1,23 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Adam",
+      "lastName": "Slodowy",
+      "age": 40,
+      "phone": 4443214200
+    },{
+      "id": 2,
+      "firstName": "Karolina",
+      "lastName": "Maciąg",
+      "age": 23,
+      "phone": 4143214200
+    },{
+      "id": 3,
+      "firstName": "Malwina",
+      "lastName": "Kowalik",
+      "age": 33,
+      "phone": 322456333
+    }
+  ]
+}
