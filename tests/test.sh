@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 cd /opt
-mvn test
+mvn verify clean
 mvn surefire-report:report-only
 mvn site -DgenerateReports=false
 
