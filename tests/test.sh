@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 
-cd /tests
-mvn test -Dapi.endpoint=$ENDPOINT -Dapi.port=$PORT
+cd /opt
+mvn test
 mvn surefire-report:report-only
 mvn site -DgenerateReports=false
 
-cp -rf /tests/target/site/* /reports
+cp -rf /opt/target/site/* /reports

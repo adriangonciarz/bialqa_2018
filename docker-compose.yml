@@ -4,8 +4,13 @@ services:
     image: agonciarz/json-server
     ports:
       - "3000:3000"
+    volumes:
+      - ./data_files/db.json:/opt/db.json
   tests:
     image: agonciarz/mvn-api-tests:latest
     volumes:
       - ./reports:/reports
-      - ./config.properties:/tests/src/main/resources/config.properties
+      - ./config.properties:/opt/src/main/resources/config.properties
+      - ./data_files/db.json:/opt/db.json
+      - /Users/adriangonciarz/.m2/:/root/.m2/
+      - ./tests/:/opt/
